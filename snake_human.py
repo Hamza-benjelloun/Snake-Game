@@ -1,8 +1,6 @@
 import pygame, random
 from matplotlib import pyplot as plt
 
-from BFS import BFS
-
 pygame.init()
 
 WIN_DIMENSION = 480
@@ -136,7 +134,7 @@ def main():
         SNAKE.move()
         collide()
         eat()
-        print(SNAKE.get_head_position())
+        
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
